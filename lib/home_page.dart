@@ -43,7 +43,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     checkRealtime();
   }
@@ -58,7 +57,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Internet Connectivity'),
+        title: const Text('Internet Connectivity'),
       ),
       body: Center(
         child: Text(
@@ -68,7 +67,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: check,
-        child: Icon(Icons.wifi),
+        child: const Icon(Icons.wifi),
       ),
     );
   }
